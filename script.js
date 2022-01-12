@@ -101,6 +101,8 @@ const submitBtn = document.getElementById('submit')
 
 let currentQuiz = 0;
 
+let score = 0;
+
 loadQuiz();
 
 function loadQuiz(){
@@ -116,7 +118,43 @@ function loadQuiz(){
     
 }
 
+function getSelected(){
+    const answerEls = document.querySelectorAll('.answer')
+
+    let answer = undefined;
+
+    answerEls.forEach((answerEl) => {
+        if(answerEl.checked){
+            answer = answerEl.id
+        }
+    })
+
+    return answer
+}
+
 submitBtn.addEventListener('click', () => {
-    currentQuiz ++;
-    loadQuiz()
+    //check to see the answer
+    const answer = getSelected()
+
+    console.log(answer)
+    
+    if(answer){
+        currentQuiz ++;
+        if(currentQuiz < quizData.length){
+            loadQuiz()
+        } else {
+            //TODO: show results
+            alert('You finished the quiz!')
+        }
+    }
+    
+
+    
+
+    
+        
+    
+
+    
+    
 })

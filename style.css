@@ -25,16 +25,22 @@ body {
 }
 
 .quiz-header {
-    padding: 4 rem;
+    padding: 4rem;
 }
 
 h2 {
     margin: 0;
+    text-align: center;
+    padding: 1rem;
 }
 
 ul li {
     font-size: 1.2rem;
     margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
 }
 
 ul {
