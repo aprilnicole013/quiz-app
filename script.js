@@ -1,18 +1,22 @@
 const quizData = [
     {
-        question: 'Question #1: Is JavaScript a case-sensitive language?',
-        a: 'yes',
-        b: 'no',
-        correct: a,
-        explanation: 'Yes! JavaScript is a case-sensitive language. This means that language keywords, variables, function names, and any other identifiers must always be typed with a consistent capitalization of letters.'
+        question: 'Question #1: Who invented JavaScript?',
+        a: 'Brendan Eich',
+        b: 'Guido van Rossum',
+        c: 'Rasmus Lerdorf',
+        d: 'Bjarne Stroustrup',
+        correct: 'a',
+        explanation: 'Netscape programmer Brandan Eich developed this new scripting language in just 10 days. It was originally named Mocha, but quickly became known as LiveScript and, later, JavaScript.'
 
     },
     {
         question: 'Question #2: Can you pass an anonymous function as an argument to another function?',
-        a: 'yes',
-        b: 'no',
-        correct: a,
-        explanation: 'Yes! An anonymous function can be passed as an argument to another function.'
+        a: '1995',
+        b: '1990',
+        c: '1994',
+        d: '1997',
+        correct: 'a',
+        explanation: 'JavaScript was developed in 1995.'
     },
     {
         question: 'Question #3: Which of the following type of variable is visible only within a function where it is defined?',
@@ -20,7 +24,7 @@ const quizData = [
         b: 'local variable',
         c: 'both of the above',
         d: 'none of the above',
-        correct: b,
+        correct: 'b',
         explanation: 'Local Variables: A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.'
     },
     {
@@ -29,7 +33,7 @@ const quizData = [
         b: 'getSubstring()',
         c: 'slice()',
         d: 'none of the above',
-        correct: a,
+        correct: 'a',
         explanation: 'substr() method returns the characters in a string beginning at the specified location through the specified number of characters.'
     },
     {
@@ -38,7 +42,7 @@ const quizData = [
         b: 'charCodeAt()',
         c: 'concat()',
         d: 'indexOf()',
-        correct: b,
+        correct: 'b',
         explanation: 'charCodeAt() − Returns a number indicating the Unicode value of the character at the given index.'
     },
     {
@@ -47,7 +51,7 @@ const quizData = [
         b: 'search()',
         c: 'substr()',
         d: 'indexOf()',
-        correct: a,
+        correct: 'a',
         explanation: 'lastIndexOf() − Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.'
     },
     {
@@ -56,7 +60,7 @@ const quizData = [
         b: 'toLowerCase()',
         c: 'toString()',
         d: 'substring()',
-        correct: a,
+        correct: 'a',
         explanation: 'toLocaleLowerCase() − Returns the calling string value converted to lower case while respecting the current locale.'
     },
     {
@@ -65,7 +69,7 @@ const quizData = [
         b: 'fontcolor()',
         c: 'fontsize()',
         d: 'bold()',
-        correct: c,
+        correct: 'c',
         explanation: 'fontsize() − Causes a string to be displayed in the specified size as if it were in a <font size = "size"> tag.'
     },
     {
@@ -74,7 +78,7 @@ const quizData = [
         b: 'join()',
         c: 'pop()',
         d: 'map()',
-        correct: d,
+        correct: 'd',
         explanation: 'map() − Creates a new array with the results of calling a provided function on every element in this array.'
     },
     {
@@ -83,7 +87,7 @@ const quizData = [
         b: 'push()',
         c: 'reduce()',
         d: 'reduceRight()',
-        correct: a,
+        correct: 'a',
         explanation: 'reverse() − Reverses the order of the elements of an array.'
     }
 ]
