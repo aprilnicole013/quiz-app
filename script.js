@@ -92,6 +92,7 @@ const quizData = [
     }
 ];
 
+const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
 const a_text = document.getElementById('a_text') 
 const b_text = document.getElementById('b_text')
@@ -106,6 +107,7 @@ let score = 0;
 loadQuiz();
 
 function loadQuiz(){
+    deselectAnswer()
     const currentQuizData = quizData[currentQuiz];
 
     questionEl.innerText = currentQuizData.question
@@ -119,7 +121,6 @@ function loadQuiz(){
 }
 
 function getSelected(){
-    const answerEls = document.querySelectorAll('.answer')
 
     let answer = undefined;
 
@@ -130,6 +131,12 @@ function getSelected(){
     })
 
     return answer
+}
+
+function deselectAnswer(){
+    answerEls.forEach((answerEl) => {
+        answerEl.checked = false;
+    })
 }
 
 submitBtn.addEventListener('click', () => {
