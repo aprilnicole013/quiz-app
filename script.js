@@ -92,6 +92,8 @@ const quizData = [
     }
 ];
 
+const quiz = document.getElementById('quiz')
+
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
 const a_text = document.getElementById('a_text') 
@@ -142,8 +144,6 @@ function deselectAnswer(){
 submitBtn.addEventListener('click', () => {
     //check to see the answer
     const answer = getSelected()
-
-    console.log(answer)
     
     if(answer){
         if(answer === quizData[currentQuiz].correct){
@@ -155,7 +155,7 @@ submitBtn.addEventListener('click', () => {
             loadQuiz()
         } else {
             //TODO: show results
-            alert('You finished the quiz!')
+            quiz.innerHTML = `<h2>You answered ${score}/${quizData.length} questions correctly.</h2>`
         }
     }
     
