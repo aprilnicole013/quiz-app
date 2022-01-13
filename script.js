@@ -139,6 +139,10 @@ submitBtn.addEventListener('click', () => {
     console.log(answer)
     
     if(answer){
+        if(answer === quizData[currentQuiz].correct){
+            score++
+            console.log(score)
+        }
         currentQuiz ++;
         if(currentQuiz < quizData.length){
             loadQuiz()
